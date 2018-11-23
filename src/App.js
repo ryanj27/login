@@ -45,7 +45,7 @@ class App extends Component {
 
     this.state = {
       canSubmit: false,
-      sso: '',
+      username: '',
       password: '',
       rememberMe: false
     };
@@ -105,7 +105,6 @@ class App extends Component {
     const { classes } = this.props;
 
     return (
-
       <React.Fragment>
         <CssBaseline />
         <main className={classes.layout}>
@@ -123,12 +122,12 @@ class App extends Component {
             <form className={classes.form}>
 
               <FormControl margin='normal' required fullWidth>
-                <InputLabel htmlFor='sso'>SSO</InputLabel>
+                <InputLabel htmlFor='username'>Username</InputLabel>
                 <Input
-                  id='sso'
-                  name='sso'
+                  id='username'
+                  name='username'
                   value={this.state.value}
-                  autoComplete='sso'
+                  autoComplete='username'
                   onChange={this.handleChange}
                   autoFocus
                 />
@@ -165,7 +164,6 @@ class App extends Component {
           </Paper>
         </main>
       </React.Fragment>
-
     );
   }
 }
