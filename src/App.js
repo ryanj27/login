@@ -105,7 +105,6 @@ class App extends Component {
     const { classes } = this.props;
 
     return (
-
       <React.Fragment>
         <CssBaseline />
         <main className={classes.layout}>
@@ -165,7 +164,6 @@ class App extends Component {
           </Paper>
         </main>
       </React.Fragment>
-
     );
   }
 }
